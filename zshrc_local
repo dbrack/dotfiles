@@ -1,3 +1,5 @@
+export DEFAULT_USER='Dominik'
+
 # User configuration
 
 # visual studio code hook
