@@ -11,6 +11,8 @@
 	editor = atom --wait
 	excludefile = ~/.gitignore_global
 	autocrlf = input
+[http "https://source.scaling.ch:8443/"]
+	sslCert = Dominik Brack
 [alias]
 	st = status
 	ci = commit
