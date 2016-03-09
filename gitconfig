@@ -1,17 +1,27 @@
 [user]
-	name = Manuel Alabor
-	email = manuel@alabor.me
+	name = Dominik Brack
+	email = dominik.brack@gmail.com
 [color]
 	branch = auto
 	diff = auto
 	interactive = auto
 	status = auto
 [core]
-	editor = subl --wait --new-window
+	ignorecase = false
+	editor = atom --wait
 	excludefile = ~/.gitignore_global
 	autocrlf = input
 [alias]
 	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	d = diff
+	dt = difftool
+	fixup = commit --fixup
+	squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+	ri = rebase --interactive --autosquash
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [push]
 	default = upstream
 [credential]

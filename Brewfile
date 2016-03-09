@@ -20,6 +20,8 @@ FORMULAS=(
     zsh
     diff-so-fancy
     thefuck
+    git-extras
+    wget
 )
 
 CASKS=(
@@ -27,25 +29,9 @@ CASKS=(
     google-drive
     firefox
     google-chrome
-#    iterm2
-    skitch
     skype
-    virtualbox
-    vagrant
-
-    qlcolorcode
-    qlmarkdown
     quicklook-json
-    qlstephen
-
-    controlplane
     alfred
-    slate
-    caffeine
-    flux
-    appcleaner
-    spotify
-
     atom
     sublime-text3
 )
