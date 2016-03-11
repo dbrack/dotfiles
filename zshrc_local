@@ -20,6 +20,13 @@ function code {
 #export PIP_VIRTUALENV_BASE=$WORKON_HOME
 #export PIP_RESPECT_VIRTUALENV=true
 
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Applications/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Applications/google-cloud-sdk/completion.zsh.inc'
+
 ## Java Stuff
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
@@ -29,13 +36,20 @@ function java_use() {
     java -version
 }
 
-## Custom PATH setup
-export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:/usr/local/share/npm/bin:/opt/X11/bin:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$PATH
-export PROJECT_HOME=$HOME/Files/Projects
+## Office
 
-## Aliases
+### Flynt
+export FLYNT_HOME='/Users/Dominik/Files/Projects/Work/Flynt'
+export SBT_OPTS="-Dsbt.override.build.repos=true -Djavax.net.ssl.keyStore=/Users/Dominik/certs/flynt/scaling.p12 -Djavax.net.ssl.keyStorePassword=MeIsc00l!$ -Djavax.net.ssl.keyStoreType=pkcs12 -Djavax.net.ssl.trustStore=/Users/Dominik/certs/flynt/cacerts.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=jks"
 
-## Finnnova
+# aliases
+alias flynt='cd $FLYNT_HOME'
+alias startFrontEnd='flynt && cd jaso-backoffice-ui && npm start'
+alias runTests='flynt && cd jaso-backoffice-ui && ./node_modules/.bin/karma start --reporters spec,osx'
+alias startJaso='flynt && cd jaso && sbt "testuiWithServices/runMain TestUi"'
+alias flyntgit='git config push.default simple && git config user.name "Dominik Brack" && git config user.email dbr@scaling.ch && git config core.ignorecase false'
+
+### Finnnova
 # export IBNG_HOME='/Users/Domnik/Files/Projects/Work/Finnova/ibnextgen/IBNextGen'
 # alias ibng='cd $IBNG_HOME'
 # alias startPlay='ibng && activator "run 9600"'
@@ -46,22 +60,3 @@ export PROJECT_HOME=$HOME/Files/Projects
 #alias apifake="sed -i.bak 's/replayRecordedData=false/replayRecordedData=true/' $IBNG_HOME/conf/application/user.conf"
 ## Proxy
 # source ~/Files/Projects/Work/osx-proxy-config/proxy-config
-
-## Flynt
-export FLYNT_HOME='/Users/Dominik/Files/Projects/Work/Flynt'
-
-# aliases
-alias flynt='cd $FLYNT_HOME'
-alias startFrontEnd='flynt && cd jaso-backoffice-ui && npm start'
-alias runTests='flynt && cd jaso-backoffice-ui && ./node_modules/karma/bin/karma start --reporters spec,osx'
-alias startJaso='flynt && cd jaso && sbt "testuiWithServices/runMain TestUi"'
-alias flyntgit='git config push.default simple && git config user.name "Dominik Brack" && git config user.email dbr@scaling.ch && git config core.ignorecase false'
-
-# exports
-export SBT_OPTS="-Dsbt.override.build.repos=true -Djavax.net.ssl.keyStore=/Users/Dominik/certs/flynt/scaling.p12 -Djavax.net.ssl.keyStorePassword=MeIsc00l!$ -Djavax.net.ssl.keyStoreType=pkcs12 -Djavax.net.ssl.trustStore=/Users/Dominik/certs/flynt/cacerts.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=jks"
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Applications/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Applications/google-cloud-sdk/completion.zsh.inc'

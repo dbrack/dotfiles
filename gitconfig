@@ -8,7 +8,6 @@
 	status = auto
 [core]
 	ignorecase = false
-	editor = atom --wait
 	excludefile = ~/.gitignore_global
 	autocrlf = input
 [http "https://source.scaling.ch:8443/"]
