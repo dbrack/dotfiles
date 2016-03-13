@@ -9,26 +9,6 @@ ZSH_THEME="manu"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
-
-
-## Aliases
-alias lla="ls -la"
-alias zshconfig="atom ~/.zshrc"
-alias wserver="ssh -p 1337 db@dbr.me -i ~/.ssh/id_milky"
-alias delpyc='find . \( -name "*.pyc" -o -name "*.pyo" \) -exec rm -v {} \;'
-alias lockscreen='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
-alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d[,_]" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
-
-# git
-alias st='git status'
-alias bad='git bisect bad'
-alias good='git bisect good'
-alias push='git push origin HEAD'
-alias add='git add -p'
-alias gprune='git remote prune origin'
-alias gbpurge='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "develop" | xargs -n 1 git branch -d'
-alias gbpurgeunsafe='git branch | grep -v "master" | grep -v "develop" | xargs git branch -D'
-
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Comment this out to disable weekly auto-update checks
@@ -55,9 +35,28 @@ source $ZSH/oh-my-zsh.sh
 
 ## Custom PATH setup
 export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:/usr/local/share/npm/bin:/opt/X11/bin:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$PATH
-export PROJECT_HOME=$HOME/Files/Project
+export PROJECT_HOME=$HOME/Files/Projects
 # fuck terminal command (Ensure thefuck homebrew cask is installed)
 eval "$(thefuck --alias)"
+
+## Aliases
+alias dev-projects='cd $PROJECT_HOME'
+alias lla="ls -la"
+alias zshconfig="atom ~/.zshrc"
+alias wserver="ssh -p 1337 db@dbr.me -i ~/.ssh/id_milky"
+alias delpyc='find . \( -name "*.pyc" -o -name "*.pyo" \) -exec rm -v {} \;'
+alias lockscreen='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
+alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d[,_]" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
+
+# git
+alias st='git status'
+alias bad='git bisect bad'
+alias good='git bisect good'
+alias push='git push origin HEAD'
+alias add='git add -p'
+alias gprune='git remote prune origin'
+alias gbpurge='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "develop" | xargs -n 1 git branch -d'
+alias gbpurgeunsafe='git branch | grep -v "master" | grep -v "develop" | xargs git branch -D'
 
 
 # Environment specific additions:
