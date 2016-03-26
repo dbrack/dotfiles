@@ -119,6 +119,22 @@ defaults write com.apple.dock largesize -int 60
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool false
 
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
 
 
 for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
