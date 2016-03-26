@@ -107,17 +107,17 @@ chflags nohidden ~/Library
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilte-stack -bool true
 
-# Set the icon size of Dock items to 60 pixels
-defaults write com.apple.dock tilesize -int 60
+# Set the icon size of Dock items to 45 pixels
+defaults write com.apple.dock tilesize -int 45
 
 # Set Magnification On
 defaults write com.apple.dock magnification -bool true
 
-# Set max Size of Icon to 92
-defaults write com.apple.dock largesize -int 92
+# Set max Size of Icon to 60
+defaults write com.apple.dock largesize -int 60
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool false
 
 
 
