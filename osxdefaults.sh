@@ -26,7 +26,7 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
 # Disable Press-And-Hold-Key Annoyance:
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
