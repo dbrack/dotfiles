@@ -53,6 +53,7 @@ export CONFIG_WSROOT="ws://localhost:8090/"
 alias flynt='cd $FLYNT_HOME'
 alias startFrontEnd='flynt && cd jaso-backoffice-ui && npm start'
 alias runTests='flynt && cd jaso-backoffice-ui && ./node_modules/.bin/karma start --reporters spec,osx'
+alias startEmber='flynt && cd ember && npm start'
 alias startJaso='flynt && cd jaso && sbt "testuiWithServices/runMain TestUi"'
 alias flyntgit='git config push.default simple && git config user.name "Dominik Brack" && git config user.email dbr@scaling.ch && git config core.ignorecase false'
 
