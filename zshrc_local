@@ -40,7 +40,14 @@ function java_use() {
 
 ### Flynt
 export FLYNT_HOME='/Users/Dominik/Files/Projects/Work/Flynt'
+
+# jaso settings
 export SBT_OPTS="-Dsbt.override.build.repos=true -Djavax.net.ssl.keyStore=/Users/Dominik/certs/flynt/scaling.p12 -Djavax.net.ssl.keyStorePassword=MeIsc00l!$ -Djavax.net.ssl.keyStoreType=pkcs12 -Djavax.net.ssl.trustStore=/Users/Dominik/certs/flynt/cacerts.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.trustStoreType=jks"
+
+# ember settings
+export TARGET="dev"
+export CONFIG_APIROOT="http://localhost:8090/"
+export CONFIG_WSROOT="ws://localhost:8090/"
 
 # aliases
 alias flynt='cd $FLYNT_HOME'

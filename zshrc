@@ -40,7 +40,7 @@ export PROJECT_HOME=$HOME/Files/Projects
 eval "$(thefuck --alias)"
 
 ## Aliases
-alias dev-projects='cd $PROJECT_HOME'
+alias dev='cd $PROJECT_HOME'
 alias lla="ls -la"
 alias zshconfig="atom ~/.zshrc"
 alias wserver="ssh -p 1337 db@dbr.me -i ~/.ssh/id_milky"
