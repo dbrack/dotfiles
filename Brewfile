@@ -21,7 +21,12 @@ FORMULAS=(
     diff-so-fancy
     thefuck
     git-extras
+    typesafe-activator
+    scala
     wget
+    tree
+    node
+    ruby
 )
 
 CASKS=(
