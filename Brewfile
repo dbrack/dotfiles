@@ -27,6 +27,8 @@ FORMULAS=(
     tree
     node
     ruby
+    gpg
+    keybase
 )
 
 CASKS=(
