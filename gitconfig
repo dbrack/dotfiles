@@ -1,6 +1,7 @@
 [user]
 	name = Dominik Brack
 	email = dominik.brack@gmail.com
+	signingkey = 7439266E
 [color]
 	branch = auto
 	diff = auto
@@ -35,3 +36,5 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+[commit]
+	gpgsign = true
