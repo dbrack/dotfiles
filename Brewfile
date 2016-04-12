@@ -28,8 +28,6 @@ FORMULAS=(
     node
     ruby
     gpg
-    gpg-agent
-    pinentry-mac
     keybase
 )
 
