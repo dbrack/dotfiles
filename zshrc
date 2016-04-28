@@ -63,3 +63,6 @@ alias gbpurgeunsafe='git branch | grep -v "master" | grep -v "develop" | xargs g
 if [ -f ~/.zshrc_local ]; then
 	source ~/.zshrc_local
 fi
+
+export NVM_DIR="/Users/Dominik/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
