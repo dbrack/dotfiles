@@ -20,3 +20,6 @@ ln -s ~/Google\ Drive/Files/Miscellaneous ~/Files
 ln -s /Volumes/Boxcryptor/Google\ Drive/Files/Private ~/Files
 ln -s ~/Google\ Drive/Pictures/Wallpaper ~/Pictures/Wallpaper
 ln -s /Volumes/Boxcryptor/Google\ Drive/Pictures/Celebrities/ ~/Pictures/Celebrities
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
