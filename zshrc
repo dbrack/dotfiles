@@ -43,7 +43,7 @@ eval "$(thefuck --alias)"
 alias dev='cd $PROJECT_HOME'
 alias lla="ls -la"
 alias zshconfig="atom ~/.zshrc"
-alias wserver="ssh -p 1337 db@dbr.me -i ~/.ssh/id_milky"
+alias wserver="ssh -p 1337 db@dbr.me -i ~/.ssh/milky"
 alias delpyc='find . \( -name "*.pyc" -o -name "*.pyo" \) -exec rm -v {} \;'
 alias lockscreen='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d[,_]" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
