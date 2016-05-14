@@ -35,12 +35,12 @@ source $ZSH/oh-my-zsh.sh
 
 ## Custom PATH setup
 export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:/usr/local/share/npm/bin:/opt/X11/bin:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$PATH
-export PROJECT_HOME=$HOME/Files/Projects
+export CLONES_HOME=$HOME/Clones
 # fuck terminal command (Ensure thefuck homebrew cask is installed)
 eval "$(thefuck --alias)"
 
 ## Aliases
-alias dev='cd $PROJECT_HOME'
+alias dev='cd $CLONES_HOME'
 alias lla="ls -la"
 alias zshconfig="atom ~/.zshrc"
 alias wserver="ssh -p 1337 db@dbr.me -i ~/.ssh/milky"
