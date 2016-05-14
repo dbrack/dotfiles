@@ -41,6 +41,14 @@ CASKS=(
     alfred
     atom
     sublime-text3
+    slack
+    evernote
+    telegram
+    whatsapp
+    dash
+    tower
+    boxcryptor
+    1password
 )
 
 function setup() {
