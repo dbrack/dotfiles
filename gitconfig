@@ -9,8 +9,8 @@
 	status = auto
 [core]
 	ignorecase = false
-	excludefile = ~/.gitignore_global
 	autocrlf = input
+	excludesfile = ~/.gitignore_global
 [http "https://source.scaling.ch:8443/"]
 	sslCert = Dominik Brack
 [alias]
