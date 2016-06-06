@@ -49,6 +49,7 @@ CASKS=(
     tower
     boxcryptor
     1password
+    controlplane
 )
 
 function setup() {
