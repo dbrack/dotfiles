@@ -25,7 +25,6 @@ FORMULAS=(
     scala
     wget
     tree
-    node
     ruby
     gpg
     keybase
