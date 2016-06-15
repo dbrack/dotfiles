@@ -40,3 +40,5 @@
 	gpgsign = true
 [pull]
 	rebase = true
+[diff]
+	compactionHeuristic = 1
