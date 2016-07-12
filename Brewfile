@@ -28,6 +28,7 @@ FORMULAS=(
     ruby
     gpg
     keybase
+    jq
 )
 
 CASKS=(
