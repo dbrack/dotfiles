@@ -11,6 +11,7 @@
 	ignorecase = false
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
+	editor = vim
 [http "https://source.scaling.ch:8443/"]
 	sslCert = Dominik Brack
 [alias]
