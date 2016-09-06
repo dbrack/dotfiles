@@ -38,6 +38,8 @@ export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:/usr/local/sha
 export CLONES_HOME=$HOME/Clones
 # fuck terminal command (Ensure thefuck homebrew cask is installed)
 eval "$(thefuck --alias)"
+# alias GitHub's 'hub' as 'git'
+eval "$(hub alias -s)"
 
 ## Aliases
 alias dev='cd $CLONES_HOME'
