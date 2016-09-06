@@ -97,8 +97,7 @@ build_prompt() {
   prompt_status
   prompt_context
   prompt_dir
-  prompt_git
+  # prompt_git
   prompt_end
 }
-
 PROMPT='%{%f%b%k%}$(build_prompt) '

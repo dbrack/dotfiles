@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="manu"
+ZSH_THEME="dbr"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -26,7 +26,7 @@ ZSH_THEME="manu"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras osx brew gitignore history-substring-search)
+plugins=(git git-extras git-prompt osx brew gitignore history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
