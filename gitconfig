@@ -43,3 +43,5 @@
 	rebase = true
 [diff]
 	compactionHeuristic = 1
+[status]
+	submoduleSummary = true
