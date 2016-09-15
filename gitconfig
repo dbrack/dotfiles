@@ -49,3 +49,7 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[branch "master"]
+	mergeoptions = --no-ff
+[branch "develop"]
+	mergeoptions = --no-ff
