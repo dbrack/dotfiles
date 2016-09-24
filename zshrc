@@ -26,7 +26,7 @@ ZSH_THEME="dbr"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras git-prompt osx brew gitignore history-substring-search)
+plugins=(osx brew thefuck git git-extras github gitignore history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -36,10 +36,6 @@ source $ZSH/oh-my-zsh.sh
 ## Custom PATH setup
 export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:/usr/local/share/npm/bin:/opt/X11/bin:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$PATH
 export CLONES_HOME=$HOME/Clones
-# fuck terminal command (Ensure thefuck homebrew cask is installed)
-eval "$(thefuck --alias)"
-# alias GitHub's 'hub' as 'git'
-eval "$(hub alias -s)"
 
 ## Aliases
 alias dev='cd $CLONES_HOME'
