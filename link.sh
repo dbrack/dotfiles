@@ -11,8 +11,8 @@ done
 # Install ZSH Theme
 ln -s $PWD/ZSH\ Themes/dbr.zsh-theme ~/.oh-my-zsh/themes/dbr.zsh-theme
 
-# Link Sublime
-# ln -s "$PWD/Sublime Text 2/Preferences.sublime-settings" "~/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+# Link vim
+ln -s $PWD/vim ~/.vim
 
 # link google drive folders
 ln -s ~/Google\ Drive/Documents/Education ~/Documents
