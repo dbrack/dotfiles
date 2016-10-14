@@ -13,7 +13,9 @@
 	excludesfile = ~/.gitignore_global
 	editor = vim
 [http "https://source.scaling.ch:8443/"]
-	sslCert = Dominik Brack
+	# sslCert = Dominik Brack
+	sslCert = /Users/Dominik/certs/flynt/scaling.p12
+	sslcertpasswordprotected = true
 [alias]
 	st = status
 	ci = commit
