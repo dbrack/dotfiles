@@ -33,6 +33,8 @@ source $ZSH/oh-my-zsh.sh
 #export CLICOLOR=1
 #export LSCOLORS='ExFxCxDxbxegedabagacad'
 
+export LC_ALL=en_US.UTF-8
+
 ## Custom PATH setup
 export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:/usr/local/share/npm/bin:/opt/X11/bin:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$PATH
 export CLONES_HOME=$HOME/Clones
