@@ -1,5 +1,6 @@
 export DEFAULT_USER='Dominik'
-export EDITOR='atom -nw'
+# export EDITOR='atom -nw'
+export EDITOR='subl -w'
 
 # User configuration
 
