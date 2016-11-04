@@ -51,6 +51,7 @@ CASKS=(
     boxcryptor
     1password
     controlplane
+    qlmarkdown
 )
 
 function setup() {
