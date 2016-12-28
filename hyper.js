@@ -58,7 +58,8 @@ module.exports = {
   plugins: [
     //'hyperterm-mactabs',
     // 'hyperterm-atom-dark',
-     'hyperterm-material',
+    'hyperterm-atom-black',
+     // 'hyperterm-material',
     'hyperterm-blink'
      // 'hyperpower'
   ],
