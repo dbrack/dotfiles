@@ -14,6 +14,9 @@ ln -s $PWD/ZSH\ Themes/dbr.zsh-theme ~/.oh-my-zsh/themes/dbr.zsh-theme
 # Link vim
 ln -s $PWD/vim ~/.vim
 
+# link hyper
+ln -s $PWD/hyper.js ~/.hyper.js
+
 # link google drive folders
 ln -s ~/Google\ Drive/Documents/Education ~/Documents
 ln -s ~/Google\ Drive/Documents/Miscellaneous ~/Documents
