@@ -11,7 +11,7 @@
 	ignorecase = false
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
-	editor = vim
+	editor = "$EDITOR"
 [alias]
 	st = status
 	ci = commit
