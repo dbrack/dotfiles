@@ -53,6 +53,7 @@ CASKS=(
     1password
     controlplane
     qlmarkdown
+    paw
 )
 
 function setup() {
