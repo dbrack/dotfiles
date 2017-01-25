@@ -30,6 +30,7 @@ FORMULAS=(
     gpg
     keybase
     jq
+    httpie
 )
 
 CASKS=(
