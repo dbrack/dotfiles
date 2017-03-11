@@ -28,7 +28,6 @@ FORMULAS=(
     tree
     ruby
     gpg
-    keybase
     jq
     httpie
 )
@@ -54,6 +53,7 @@ CASKS=(
     controlplane
     qlmarkdown
     paw
+    keybase
 )
 
 function setup() {
