@@ -30,6 +30,8 @@ FORMULAS=(
     gpg
     jq
     httpie
+    fswatch
+    yarn
 )
 
 CASKS=(
