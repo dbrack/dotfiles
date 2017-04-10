@@ -32,6 +32,7 @@ FORMULAS=(
     httpie
     fswatch
     yarn
+    go
 )
 
 CASKS=(
