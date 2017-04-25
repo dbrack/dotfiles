@@ -57,10 +57,11 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     //'hyperterm-mactabs',
-    'hyperterm-atom-dark',
+    // 'hyperterm-atom-dark',
     // 'hyperterm-atom-black',
      // 'hyperterm-material',
-    'hyperterm-blink'
+    'hyperterm-blink',
+    'hyper-snazzy'
      // 'hyperpower'
   ],
 
