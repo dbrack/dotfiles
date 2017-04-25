@@ -20,7 +20,6 @@ FORMULAS=(
     ssh-copy-id
     zsh
     diff-so-fancy
-    thefuck
     git-extras
     typesafe-activator
     scala
