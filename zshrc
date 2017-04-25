@@ -26,7 +26,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx thefuck git git-extras github gitignore history-substring-search nvm)
+plugins=(osx thefuck git git-extras github gitignore history-substring-search nvm zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,3 +65,6 @@ if [ -f ~/.zshrc_local ]; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# added by travis gem
+[ -f /Users/Dominik/.travis/travis.sh ] && source /Users/Dominik/.travis/travis.sh
