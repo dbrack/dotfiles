@@ -56,6 +56,7 @@ CASKS=(
     qlmarkdown
     paw
     keybase
+    docker-toolbox
 )
 
 function setup() {
