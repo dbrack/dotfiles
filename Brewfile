@@ -45,7 +45,6 @@ CASKS=(
     atom
     sublime-text3
     slack
-    evernote
     telegram
     whatsapp
     dash
@@ -57,6 +56,7 @@ CASKS=(
     paw
     keybase
     docker-toolbox
+    now
 )
 
 function setup() {
