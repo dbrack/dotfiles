@@ -55,7 +55,6 @@ CASKS=(
     qlmarkdown
     paw
     keybase
-    docker-toolbox
     now
 )
 
