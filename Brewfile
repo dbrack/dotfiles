@@ -11,6 +11,7 @@ TAPS=(
 #    homebrew/versions
 #    homebrew/science
     caskroom/versions
+    homebrew/dupes
 )
 
 FORMULAS=(
@@ -32,6 +33,7 @@ FORMULAS=(
     fswatch
     yarn
     go
+    homebrew/dupes/less
 )
 
 CASKS=(
