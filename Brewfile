@@ -34,6 +34,7 @@ FORMULAS=(
     yarn
     go
     homebrew/dupes/less
+    shellcheck
 )
 
 CASKS=(
