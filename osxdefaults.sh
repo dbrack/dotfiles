@@ -114,7 +114,10 @@ defaults write com.apple.dock magnification -bool true
 defaults write com.apple.dock largesize -int 60
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool false
+defaults write com.apple.dock autohide -bool true
+
+# Make animation of auto hiding dock faster
+defaults write com.apple.dock autohide-time-modifier -float 0.45
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
