@@ -1,20 +1,11 @@
 export DEFAULT_USER='Dominik'
 # export EDITOR='atom -nw'
-export EDITOR='subl -w'
+# export EDITOR='subl -w'
+export EDITOR='code --wait'
 
 # User configuration
 
 # visual studio code hook
-function code {
-    if [[ $# = 0 ]]
-    then
-        open -a "Visual Studio Code"
-    else
-        local argPath="$1"
-        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
-        open -a "Visual Studio Code" "$argPath"
-    fi
-}
 
 ## virtualenvwrapper
 #export WORKON_HOME=$HOME/.virtualenvs
