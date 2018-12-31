@@ -1,4 +1,4 @@
-export DEFAULT_USER='Dominik'
+export DEFAULT_USER='dominik'
 # export EDITOR='atom -nw'
 # export EDITOR='subl -w'
 export EDITOR='code --wait'
