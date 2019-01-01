@@ -21,7 +21,7 @@ export EDITOR='code --wait'
 # source '/Applications/google-cloud-sdk/completion.zsh.inc'
 
 ## Java Stuff
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v 11.0.1)
 
 function java_use() {
     export JAVA_HOME=$(/usr/libexec/java_home -v $1)
