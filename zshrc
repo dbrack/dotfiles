@@ -65,6 +65,3 @@ if [ -f ~/.zshrc_local ]; then
 fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# added by travis gem
-[ -f /Users/Dominik/.travis/travis.sh ] && source /Users/Dominik/.travis/travis.sh
