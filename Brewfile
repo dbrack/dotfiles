@@ -57,7 +57,6 @@ CASKS=(
     controlplane
     qlmarkdown
     paw
-    keybase
     now
 )
 
