@@ -42,13 +42,10 @@ CASKS=(
     google-drive
     firefox
     google-chrome
-    skype
-    quicklook-json
     alfred
     atom
     sublime-text3
     slack
-    telegram
     whatsapp
     dash
     tower
