@@ -22,17 +22,12 @@ FORMULAS=(
     zsh
     diff-so-fancy
     git-extras
-    typesafe-activator
-    scala
     wget
     tree
-    ruby
     gpg
     jq
     httpie
     fswatch
-    yarn
-    go
     homebrew/dupes/less
     shellcheck
 )
@@ -54,7 +49,6 @@ CASKS=(
     controlplane
     qlmarkdown
     paw
-    now
 )
 
 function setup() {
