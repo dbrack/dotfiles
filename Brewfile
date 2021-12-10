@@ -33,22 +33,15 @@ FORMULAS=(
 )
 
 CASKS=(
-    dropbox
-    google-drive
-    firefox
     google-chrome
     alfred
-    atom
-    sublime-text3
     slack
     whatsapp
     dash
     tower
     boxcryptor
     1password
-    controlplane
     qlmarkdown
-    paw
 )
 
 function setup() {
