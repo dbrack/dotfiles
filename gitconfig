@@ -26,6 +26,7 @@
 	all = "!f() { ls -R -d */.git | sed s,/.git,, | xargs -P10 -I{} git -C {} $1; }; f"
 [push]
 	default = upstream
+	autoSetupRemote = true
 [credential]
 	helper = osxkeychain
 [pager]
