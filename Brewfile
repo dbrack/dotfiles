@@ -38,10 +38,6 @@ CASKS=(
     slack
     whatsapp
     dash
-    tower
-    boxcryptor
-    1password
-    qlmarkdown
 )
 
 function setup() {
