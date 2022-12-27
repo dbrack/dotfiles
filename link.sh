@@ -19,3 +19,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # install volta
 curl https://get.volta.sh | bash
+
+# install rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
