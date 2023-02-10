@@ -29,7 +29,8 @@ FORMULAS=(
     httpie
     fswatch
     homebrew/dupes/less
-    shellcheck
+    shellchec
+    ffmpeg
 )
 
 CASKS=(
