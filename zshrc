@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -42,12 +44,12 @@ export CLONES_HOME=$HOME/Clones
 ## Aliases
 alias dev='cd $CLONES_HOME'
 alias lla="ls -la"
-alias zshconfig="atom ~/.zshrc"
-alias wserver="ssh db@dbr.me -i ~/.ssh/milky"
+#alias zshconfig="atom ~/.zshrc"
+#alias wserver="ssh db@dbr.me -i ~/.ssh/milky"
 alias delpyc='find . \( -name "*.pyc" -o -name "*.pyo" \) -type f -delete'
 alias lockscreen='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d[,_]" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
-
+alias t='tmux'
 # git
 alias st='git status'
 alias bad='git bisect bad'
@@ -65,7 +67,19 @@ if [ -f ~/.zshrc_local ]; then
 fi
 
 # iterm integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# bun completions
+[ -s "/Users/dominik/.bun/_bun" ] && source "/Users/dominik/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

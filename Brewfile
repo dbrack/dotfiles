@@ -30,15 +30,12 @@ FORMULAS=(
     fswatch
     homebrew/dupes/less
     shellchec
-    ffmpeg
+	fzf
+	tmux
 )
 
 CASKS=(
-    google-chrome
-    alfred
-    slack
-    whatsapp
-    dash
+    alacritty
 )
 
 function setup() {
