@@ -1,4 +1,4 @@
-import =["~/Clones/dotfiles/aura.toml"]
+import =["~/Clones/dotfiles/alacritty-themes/aura.toml"]
 
 [font]
 size = 14.0
