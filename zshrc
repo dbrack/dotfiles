@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -32,14 +30,22 @@ plugins=(osx git git-extras github gitignore history-substring-search yarn npm)
 
 source $ZSH/oh-my-zsh.sh
 
-#export CLICOLOR=1
-#export LSCOLORS='ExFxCxDxbxegedabagacad'
-
 export LC_ALL=en_US.UTF-8
+
+## Starship
+# Load Starship
+eval "$(starship init zsh)"
 
 ## Custom PATH setup
 export PATH=/usr/local/share/npm/bin:"${HOME}/.config/yarn/global/node_modules/.bin":/opt/X11/bin:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$(go env GOPATH)/bin:$PATH
 export CLONES_HOME=$HOME/Clones
+
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 ## Aliases
 alias dev='cd $CLONES_HOME'
@@ -60,26 +66,15 @@ alias gprune='git remote prune origin'
 alias gbpurge='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "develop" | xargs -n 1 git branch -d'
 alias gbpurgeunsafe='git branch | grep -v "master" | grep -v "develop" | xargs git branch -D'
 
-
 # Environment specific additions:
 if [ -f ~/.zshrc_local ]; then
 	source ~/.zshrc_local
 fi
 
-# iterm integration
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
+# Source fzf Commands
+source ~/.fzfcommands
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # bun completions
-[ -s "/Users/dominik/.bun/_bun" ] && source "/Users/dominik/.bun/_bun"
+[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

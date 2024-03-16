@@ -32,6 +32,7 @@ FORMULAS=(
     shellchec
 	fzf
 	tmux
+	starship
 )
 
 CASKS=(
