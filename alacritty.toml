@@ -1,4 +1,4 @@
-import =["~/Clones/dotfiles/alacritty-themes/aura.toml"]
+import =["~/Clones/dotfiles/alacritty-themes/github_dark_tritanopia.toml"]
 
 [font]
 size = 14.0
