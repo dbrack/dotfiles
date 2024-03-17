@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -26,7 +26,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx git git-extras github gitignore history-substring-search yarn npm)
+plugins=(git git-extras compleat yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,4 +77,3 @@ source ~/.fzfcommands
 
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
-
