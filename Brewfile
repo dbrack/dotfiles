@@ -6,11 +6,6 @@
 PATH=/usr/local/bin:$PATH
 
 TAPS=(
-#    homebrew/binary
-#    homebrew/dupes
-#    homebrew/versions
-#    homebrew/science
-    caskroom/versions
     homebrew/dupes
 )
 
@@ -30,7 +25,6 @@ FORMULAS=(
     fswatch
     homebrew/dupes/less
     shellchec
-	fzf
 	tmux
 	starship
 )
