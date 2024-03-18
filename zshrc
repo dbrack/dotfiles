@@ -71,9 +71,5 @@ if [ -f ~/.zshrc_local ]; then
 	source ~/.zshrc_local
 fi
 
-# Source fzf Commands
-source ~/.fzfcommands
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
