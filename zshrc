@@ -37,7 +37,7 @@ export LC_ALL=en_US.UTF-8
 eval "$(starship init zsh)"
 
 ## Custom PATH setup
-export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/share/npm/bin:"${HOME}/.config/yarn/global/node_modules/.bin":/opt/X11/bin:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/platform-tools:$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$(go env GOPATH)/bin:$PATH
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/share/npm/bin:"${HOME}/.config/yarn/global/node_modules/.bin":$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$(go env GOPATH)/bin:$PATH
 export CLONES_HOME=$HOME/Clones
 
 export VOLTA_HOME="$HOME/.volta"
