@@ -32,12 +32,8 @@ source $ZSH/oh-my-zsh.sh
 
 export LC_ALL=en_US.UTF-8
 
-## Starship
-# Load Starship
-eval "$(starship init zsh)"
-
 ## Custom PATH setup
-export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/share/npm/bin:"${HOME}/.config/yarn/global/node_modules/.bin":$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$(go env GOPATH)/bin:$PATH
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/share/npm/bin:"${HOME}/.config/yarn/global/node_modules/.bin":$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$PATH
 export CLONES_HOME=$HOME/Clones
 
 export VOLTA_HOME="$HOME/.volta"
@@ -73,3 +69,7 @@ fi
 
 # bun completions
 [ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+
+## Starship
+# Load Starship
+eval "$(starship init zsh)"
