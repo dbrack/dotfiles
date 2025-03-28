@@ -13,3 +13,6 @@ ln -s $PWD/vim ~/.vim
 
 # Link starship config
 ln -s $PWD/starship.toml ~/.config/
+
+# Links ssh config
+ln -s $PWD/sshconfig ~/.ssh/config
