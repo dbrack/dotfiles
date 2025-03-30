@@ -33,7 +33,7 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 
 ## Custom PATH setup
-export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/share/npm/bin:"${HOME}/.config/yarn/global/node_modules/.bin":$JAVA_HOME/bin:$HOME/.rvm/bin:$HOME/.bin:/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$JAVA_HOME/bin:$HOME/.bin:/usr/local/sbin:$PATH
 export CLONES_HOME=$HOME/Clones
 
 export VOLTA_HOME="$HOME/.volta"
@@ -49,7 +49,6 @@ alias lla="ls -la"
 #alias zshconfig="atom ~/.zshrc"
 #alias wserver="ssh db@dbr.me -i ~/.ssh/milky"
 alias delpyc='find . \( -name "*.pyc" -o -name "*.pyo" \) -type f -delete'
-alias lockscreen='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d[,_]" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
 alias t='tmux'
 # git
