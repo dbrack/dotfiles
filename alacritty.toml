@@ -15,4 +15,4 @@ x = 5
 y = 5
 
 [general]
-import =["~/Clones/dotfiles/alacritty-themes/github_dark_tritanopia.toml"]
+import =["~/Projects/dotfiles/alacritty-themes/github_dark_tritanopia.toml"]

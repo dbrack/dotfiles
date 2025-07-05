@@ -34,7 +34,7 @@ export LC_ALL=en_US.UTF-8
 
 ## Custom PATH setup
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$JAVA_HOME/bin:$HOME/.bin:/usr/local/sbin:$PATH
-export CLONES_HOME=$HOME/Clones
+export PROJECTS_HOME=$HOME/Projects
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
@@ -44,7 +44,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 ## Aliases
-alias dev='cd $CLONES_HOME'
+alias dev='cd $PROJECTS_HOME'
 alias lla="ls -la"
 #alias zshconfig="atom ~/.zshrc"
 #alias wserver="ssh db@dbr.me -i ~/.ssh/milky"
