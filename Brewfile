@@ -27,6 +27,7 @@ FORMULAS=(
     shellchec
 	tmux
 	starship
+	mkcert
 )
 
 CASKS=(
