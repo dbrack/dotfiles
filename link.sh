@@ -19,3 +19,6 @@ ln -s $PWD/starship.toml ~/.config/
 # Links ssh config
 rm ~/.ssh/config
 ln -s $PWD/sshconfig ~/.ssh/config
+
+# ghostty config
+ln -s $PWD/ghostty-config ~/.config/ghostty/config
