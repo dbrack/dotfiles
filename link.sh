@@ -22,3 +22,10 @@ ln -s $PWD/sshconfig ~/.ssh/config
 
 # ghostty config
 ln -s $PWD/ghostty-config ~/.config/ghostty/config
+
+# link fish configs
+rm ~/.config/fish/config.fish
+ln -s $PWD/config.fish ~/.config/fish/config.fish
+
+rm ~/.config/fish/fish_variables
+ln -s $PWD/fish_variables ~/.config/fish/fish_variables
