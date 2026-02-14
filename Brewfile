@@ -28,6 +28,7 @@ FORMULAS=(
 	tmux
 	starship
 	mkcert
+	fish
 )
 
 CASKS=(
