@@ -72,3 +72,6 @@ fi
 ## Starship
 # Load Starship
 eval "$(starship init zsh)"
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
