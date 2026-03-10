@@ -58,4 +58,4 @@
 [tag]
 	gpgSign = true
 [gpg "ssh"]
-	defaultKeyCommand = /Users/dominik/.local/bin/git-proton-pass-signing-key
+	defaultKeyCommand = sh -c \"~/.local/bin/git-proton-pass-signing-key\"
