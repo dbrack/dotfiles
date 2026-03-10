@@ -29,6 +29,7 @@ FORMULAS=(
 	starship
 	mkcert
 	fish
+	protonpass/tap/pass-cli
 )
 
 CASKS=(

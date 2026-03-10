@@ -29,6 +29,7 @@ alias gbpurgeunsafe="git branch | grep -v \"master\" | grep -v \"develop\" | xar
 
 # Environment Variables
 set -gx PROJECTS_HOME $HOME/Projects
+set -gx SSH_AUTH_SOCK $HOME/.ssh/proton-pass-agent.sock
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 

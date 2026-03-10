@@ -1,7 +1,6 @@
 [user]
 	name = Dominik Brack
 	email = 315219+dbrack@users.noreply.github.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFhBzFS6xflOHZAFcMlLhHwO2WvWuiSBRjdyFfBvpt/X
 [color]
 	branch = auto
 	diff = auto
@@ -38,7 +37,7 @@
 	newNormal = green bold
 	newHighlight = green bold 22
 [commit]
-	gpgsign = true
+	gpgSign = true
 [pull]
 	rebase = true
 [diff]
@@ -56,5 +55,7 @@
 	mergeoptions = --no-ff
 [gpg]
 	format = ssh
+[tag]
+	gpgSign = true
 [gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	defaultKeyCommand = /Users/dominik/.local/bin/git-proton-pass-signing-key
