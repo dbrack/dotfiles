@@ -12,6 +12,12 @@ if status is-interactive
     end
 end
 
+# Environment Variables
+set -gx PROJECTS_HOME $HOME/Projects
+set -gx SSH_AUTH_SOCK $HOME/.ssh/proton-pass-agent.sock
+set -gx VOLTA_HOME "$HOME/.volta"
+set -gx PATH "$VOLTA_HOME/bin" $PATH
+
 # Aliases
 alias dev="cd $PROJECTS_HOME"
 alias lla="ls -la"
@@ -26,12 +32,6 @@ alias add="git add -p"
 alias gprune="git remote prune origin"
 alias gbpurge="git branch --merged | grep -v \"\\*\" | grep -v \"master\" | grep -v \"develop\" | xargs -n 1 git branch -d"
 alias gbpurgeunsafe="git branch | grep -v \"master\" | grep -v \"develop\" | xargs git branch -D"
-
-# Environment Variables
-set -gx PROJECTS_HOME $HOME/Projects
-set -gx SSH_AUTH_SOCK $HOME/.ssh/proton-pass-agent.sock
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 starship init fish | source
 
