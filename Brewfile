@@ -30,6 +30,7 @@ FORMULAS=(
 	mkcert
 	fish
 	protonpass/tap/pass-cli
+	zoxide
 )
 
 CASKS=(

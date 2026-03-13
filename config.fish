@@ -2,15 +2,13 @@
 if status is-interactive
     # Ensure Atuin is initialized first
     atuin init fish | source
-
-    # Bind Ctrl-R to Atuin search (overrides Fish default history search)
-    if functions -q _atuin_search
-        bind \cr _atuin_search
-    else
-        # Fallback: call atuin directly if the function name differs
-        bind \cr 'atuin search -i'
-    end
 end
+
+# key bindings for history search
+bind \e\[A up-or-search
+bind \cr _atuin_search
+bind \e\[1\;3A history-prefix-search-backward
+bind \e\[1\;3B history-prefix-search-forward
 
 # Environment Variables
 set -gx PROJECTS_HOME $HOME/Projects
@@ -33,8 +31,9 @@ alias gprune="git remote prune origin"
 alias gbpurge="git branch --merged | grep -v \"\\*\" | grep -v \"master\" | grep -v \"develop\" | xargs -n 1 git branch -d"
 alias gbpurgeunsafe="git branch | grep -v \"master\" | grep -v \"develop\" | xargs git branch -D"
 
-starship init fish | source
-
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+starship init fish | source
+zoxide init fish | source
