@@ -4,12 +4,6 @@ if status is-interactive
     atuin init fish | source
 end
 
-# key bindings for history search
-bind \e\[A up-or-search
-bind \cr _atuin_search
-bind \e\[1\;3A history-prefix-search-backward
-bind \e\[1\;3B history-prefix-search-forward
-
 # Environment Variables
 set -gx PROJECTS_HOME $HOME/Projects
 set -gx SSH_AUTH_SOCK $HOME/.ssh/proton-pass-agent.sock
