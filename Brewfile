@@ -31,6 +31,8 @@ FORMULAS=(
 	fish
 	protonpass/tap/pass-cli
 	zoxide
+	age
+	age-plugin-yubikey
 )
 
 CASKS=(
