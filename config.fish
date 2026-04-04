@@ -8,7 +8,6 @@ end
 set -gx PROJECTS_HOME $HOME/Projects
 set -gx SSH_AUTH_SOCK $HOME/.ssh/proton-pass-agent.sock
 set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # Aliases
 alias dev="cd $PROJECTS_HOME"
