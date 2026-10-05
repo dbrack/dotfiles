@@ -59,3 +59,5 @@
 	gpgSign = true
 [gpg "ssh"]
 	defaultKeyCommand = sh -c \"~/.local/bin/git-proton-pass-signing-key\"
+[init]
+	defaultBranch = main
